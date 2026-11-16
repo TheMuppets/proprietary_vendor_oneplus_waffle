@@ -823,7 +823,6 @@ PRODUCT_PACKAGES += \
     libdepthcomputation \
     libdigital-dimming \
     libdisp-aba \
-    libdisplayconfig.qti \
     libdisplayqos \
     libdisplayskuutils \
     libdpp_manager \
@@ -840,7 +839,6 @@ PRODUCT_PACKAGES += \
     libhdrdynamic \
     libhdrdynamicootf \
     libhdrvivid \
-    libhistogram \
     libhwconfigurationutil_vendor \
     libhwcsensor \
     libintervmipc \
@@ -869,7 +867,6 @@ PRODUCT_PACKAGES += \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdcm-mode-parser \
-    libqdutils \
     libqll \
     libqllengine \
     libqrtrclient \
@@ -877,14 +874,10 @@ PRODUCT_PACKAGES += \
     libqsegnet \
     libqshcamera \
     librcmask \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmcore \
-    libsdmdal \
     libsdmextension \
-    libsdmutils \
     libsfeShiftExtrapolation \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
@@ -1047,7 +1040,6 @@ PRODUCT_PACKAGES += \
     feature_enabler_client \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.display.composer-service \
     init.qti.graphics \
     ppd \
     qdcmss \
