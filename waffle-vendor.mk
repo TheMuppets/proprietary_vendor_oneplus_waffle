@@ -1240,6 +1240,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
     vendor/oneplus/waffle/proprietary/odm/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube:$(TARGET_COPY_OUT_ODM)/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube \
     vendor/oneplus/waffle/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
+    vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/waffle/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
@@ -1439,6 +1440,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/firmware/ufs/SAMSUNG-KLUGGARHHD-B0G1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUGGARHHD-B0G1.bin \
     vendor/oneplus/waffle/proprietary/odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SKhynix-HN8T274EJKX130.bin \
     vendor/oneplus/waffle/proprietary/odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh:$(TARGET_COPY_OUT_ODM)/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh \
+    vendor/oneplus/waffle/proprietary/odm/init.oplus.face.rc:$(TARGET_COPY_OUT_ODM)/init.oplus.face.rc \
     vendor/oneplus/waffle/proprietary/odm/lib64/camera/awb_parameter_default.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_default.bin \
     vendor/oneplus/waffle/proprietary/odm/lib64/camera/awb_parameter_qtech_imx581_wide.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_qtech_imx581_wide.bin \
     vendor/oneplus/waffle/proprietary/odm/lib64/camera/awb_parameter_qtech_imx615_front.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/awb_parameter_qtech_imx615_front.bin \
@@ -1492,6 +1494,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/antdtx.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/antdtx.b07 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/antdtx.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/antdtx.b08 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/antdtx.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/antdtx.mdt \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b00 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b01 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b02 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b03 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b04 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b05 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b06 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b07 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.b08 \
+    vendor/oneplus/waffle/proprietary/odm/vendor/firmware/facereg.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/facereg.mdt \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/uff_gx.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_gx.b00 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/uff_gx.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_gx.b01 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/uff_gx.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_gx.b02 \
@@ -1877,6 +1889,7 @@ PRODUCT_PACKAGES += \
     libbacklight-calib \
     libbitmlengine \
     libbitmlenginev2 \
+    libcamera2ndk_vendor \
     libcamerapostproc \
     libcamxcommonutils \
     libcamxexternalformatutils \
@@ -2243,6 +2256,7 @@ PRODUCT_PACKAGES += \
     libstblur_capture_api \
     libstface_datas \
     libstface_fd_api \
+    libstfaceunlockocl \
     libstfd_mobile_api \
     libtensorflowlite_oplus \
     libtfa98xx \
@@ -2301,6 +2315,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
+    manifest_oplus_face.xml \
     manifest_oplus_sendextcamcmd.xml \
     vendor.pixelworks.hardware.display-service.xml \
     vendor.pixelworks.hardware.feature-service.xml \
@@ -2312,6 +2327,7 @@ PRODUCT_PACKAGES += \
     ppd \
     qdcmss \
     cwb_utils_aidl \
+    vendor.oplus.hardware.biometrics.face@1.0-service \
     vendor.oplus.hardware.cammidasservice-V1-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     vendor.pixelworks.hardware.feature-service \
