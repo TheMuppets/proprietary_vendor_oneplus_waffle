@@ -115,7 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/fwk_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/fwk_config.json \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/main_inv_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_inv_mapxy_33x25.bin \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/main_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/main_mapxy_33x25.bin \
-    vendor/oneplus/waffle/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mtStereoParams.bin \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/mvg_sat_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/mvg_sat_config.json \
     vendor/oneplus/waffle/proprietary/odm/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mwStereoParams.bin \
@@ -456,6 +455,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/vendor/etc/ltm_config_AA545_P_3_A0005_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA545_P_3_A0005_dsc_cmd_mode_panel.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/ltm_config_AC090_P_3_A0005_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AC090_P_3_A0005_dsc_cmd_mode_panel.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
+    vendor/oneplus/waffle/proprietary/vendor/etc/media_profiles_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pineapple.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm \
     vendor/oneplus/waffle/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/oneplus/waffle/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
